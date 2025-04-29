@@ -1,0 +1,190 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family:sans-serif;
+}
+body{
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url(../images/dorm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+/* main{
+    height: 100%;
+    width: 100%;
+} */
+header{
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 40px;
+    padding-left: 40px;
+    z-index: 1000;
+}
+#logo{
+    color: white;
+    cursor: grab;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+    transition: font-size 0.6s, text-shadow 0.6s;
+}
+#logo:hover{
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.8);
+    font-size: 45px;
+}
+#elements{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+.logout-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 20px;
+    z-index: 10;
+}
+.logout-container button{
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+.logout-container button:hover {
+    text-decoration: underline;
+}
+.text:hover .logout-container{
+    display: block;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 18.5px;
+    text-shadow: 5px 5px 10px rgba(255,255,255,0.45);
+    transition: background-color 0.4s, font-size 0.4s;
+    position: relative;
+}
+.text:hover{
+    font-size: 28px;
+    background-color: rgba(38, 136, 206, 0.5);
+}
+.my-icon{
+    font-size: 23px;
+    margin-right: 15px;
+}
+section{
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    columns: white;
+    
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    z-index: 2;
+}
+#shortDescription{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#form1, #form2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#roommateForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxes, .circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+}
+.labelBox, .inputBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+.labelCircle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.inputCircle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+h1, h3{
+    margin: 20px;
+}
+h3{
+    margin-top: 30px;
+    text-decoration: underline;
+}
+h4{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#submit{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+}

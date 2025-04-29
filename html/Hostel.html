@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hostel</title>
+    <link rel="stylesheet" href="../css/Hostel.css">
+    <script type="module" src="../js/firebaseauth.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div id="logo">
+               <p>DormDiscover</p>
+            </div>
+            <div id="elements">
+                <div><a href="./WelcomePage.html" class="text">Home</a></div>
+                <div><a href="./AboutUs.html" class="text">About Us</a></div>
+                <div><a href="./Login.html" class="text">Login</a></div>
+            </div>
+        </header>
+    </main>
+    <section>
+        <div id="box">
+            <div id="mainHeading">
+                <h1>What are you searching for?</h1>
+            </div>
+            <form action="" id="hostelForm" method="post">
+                <div id="form1">
+                    <div class="circles">
+                        <label for="dorm" class="labelCircle">Dormitory</label>
+                        <input type="radio" name="hos" id="dorm" class="inputCircle">
+                    </div>
+                    <div class="circles">
+                        <label for="pg" class="labelCircle">PG</label>
+                        <input type="radio" name="hos" id="pg" class="inputCircle">
+                    </div>
+                    <div class="circles">
+                        <label for="flat" class="labelCircle">Flat</label>
+                        <input type="radio" name="hos" id="flat" class="inputCircle">
+                    </div>
+                </div>
+                <div id="form2">
+                    <div id="subHeading">
+                        <h2>Sharing</h2>
+                    </div>
+                    <div class="circles">
+                        <label for="single" class="labelCircle">Single</label>
+                        <input type="radio" name="sharing" id="single" class="inputCircle">
+                    </div>
+                    <div class="circles">
+                        <label for="double" class="labelCircle">Double</label>
+                        <input type="radio" name="sharing" id="double" class="inputCircle">
+                    </div>
+                    <div class="circles">
+                        <label for="triple" class="labelCircle">Triple</label>
+                        <input type="radio" name="sharing" id="triple" class="inputCircle">
+                    </div>
+                    <div class="circles">
+                        <label for="quadruple" class="labelCircle">Quadruple</label>
+                        <input type="radio" name="sharing" id="quadruple" class="inputCircle">
+                    </div>
+                </div>
+                <input type="submit" value="Submit" id="submit">
+                
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

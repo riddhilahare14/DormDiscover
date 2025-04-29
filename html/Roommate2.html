@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Roommate Form</title>
+    <link rel="stylesheet" href="../css/Roommate2.css">
+    <script type="module" src="../js/firebaseauth.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div id="logo">
+               <p>DormDiscover</p>
+            </div>
+            <div id="elements">
+                <div><a href="./WelcomePage.html" class="text">Home</a></div>
+                <div><a href="./AboutUs.html" class="text">About Us</a></div>
+                <div><a href="./Login.html" class="text">Login</a></div>
+            </div>
+        </header>
+    </main>
+    <section>
+        <div id="box">
+            <div id="mainHeading">
+                <h1>Fill Your Details</h1>
+            </div>
+            <div id="shortDescription">
+                <p>Let your roommate know you better</p>
+            </div>
+            <form action="./WelcomePage.html" id="roommateForm" method="post">
+                <div id="form1">
+                    <div class="boxes">
+                        <label for="fullName" class="labelBox">Full Name</label>
+                        <input type="text" name="fullName" id="fullName" class="inputBox" placeholder="Full Name" required>
+                    </div>
+                    <div class="boxes">
+                        <label for="birthDate" class="labelBox">Birth Date</label>
+                        <input type="date" name="birthDate" id="birthDate" class="inputBox" required>
+                    </div>
+                    <div class="boxes">
+                        <label for="address" class="labelBox">Hostel Address</label>
+                        <input type="text" name="address" id="address" class="inputBox" placeholder="Address" required>
+                    </div>
+                    <div class="boxes">
+                        <label for="mobNo" class="labelBox">Phone no.</label>
+                        <input type="tel" name="mobNo" id="mobNo" class="inputBox" placeholder="Mob. no." required>
+                    </div>
+                    <div class="boxes">
+                        <label for="pincode" class="labelBox">Pincode</label>
+                        <input type="text" maxlength="6" title = "Please enter a valid 6-digit 
+                        PIN code" name="pincode" id="pincode" class="inputBox" placeholder="PIN code" required>
+                    </div>
+                    <div class="boxes">
+                        <label for="hometown" class="labelBox">Hometown</label>
+                        <input type="text" name="hometown" id="hometown" class="inputBox" placeholder="Hometown" required>
+                    </div>
+                    <div class="boxes">
+                        <label for="major" class="labelBox">What is your major?</label>
+                        <input type="text" name="major" id="major" class="inputBox" placeholder="Major" required>
+                    </div>
+                    <div class="boxes">
+                        <label for="smoking" class="labelBox">Do you smoke cigarettes?</label>
+                        <input type="radio" name="smoking" id="smoking" class="inputCircle">
+                    </div>
+                    <div class="boxes">
+                        <label for="drinking" class="labelBox">Do you drink alcohol?</label>
+                        <input type="radio" name="drinking" id="drinking" class="inputCircle">
+                    </div>
+                </div>
+                <div id="form2">
+                    <h3>Details about the Hostel</h3>
+
+                    <div id="hostelType">
+                        <h4>Hostel Type</h4>
+                        <div class="circles">
+                            <label for="hostel" class="labelCircle">Hostel</label>
+                            <input type="radio" name="hos" id="hostel" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="pg" class="labelCircle">PG</label>
+                            <input type="radio" name="hos" id="pg" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="flat" class="labelCircle">Flat</label>
+                            <input type="radio" name="hos" id="flat" class="inputCircle">
+                        </div>
+                    </div>
+
+                    <div id="sharing">
+                        <h4>Sharing</h4>
+                        <div class="circles">
+                            <label for="single" class="labelCircle">Single</label>
+                            <input type="radio" name="shar" id="single" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="double" class="labelCircle">Double</label>
+                            <input type="radio" name="shar" id="double" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="triple" class="labelCircle">Triple</label>
+                            <input type="radio" name="shar" id="triple" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="quadruple" class="labelCircle">Quadruple</label>
+                            <input type="radio" name="shar" id="quadruple" class="inputCircle">
+                        </div>
+                    </div>
+
+                    <div id="facilities">
+                        <h4>Facilities</h4>
+                        <div class="circles">
+                            <label for="TV" class="labelCircle">TV</label>
+                            <input type="radio" name="TV" id="TV" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="washingMachine" class="labelCircle">Washing Machine</label>
+                            <input type="radio" name="washingMachine" id="washingMachine" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="refrigerator" class="labelCircle">Refrigerator</label>
+                            <input type="radio" name="refrigerator" id="refrigerator" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="microwave" class="labelCircle">Microwave</label>
+                            <input type="radio" name="microwave" id="microwave" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="elevator" class="labelCircle">Elevator</label>
+                            <input type="radio" name="elevator" id="elevator" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="ro" class="labelCircle">Filtered Water</label>
+                            <input type="radio" name="ro" id="ro" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="balcony" class="labelCircle">Balcony</label>
+                            <input type="radio" name="balcony" id="balcony" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="attatchedWashroom" class="labelCircle">Attatched Washroom</label>
+                            <input type="radio" name="attatchedWashroom" id="attatchedWashroom" class="inputCircle">
+                        </div>
+                        <div class="circles">
+                            <label for="geyser" class="labelCircle">Geyser</label>
+                            <input type="radio" name="geyser" id="geyser" class="inputCircle">
+                        </div>
+                    </div>   
+                </div>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

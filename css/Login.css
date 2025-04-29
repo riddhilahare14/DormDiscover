@@ -1,0 +1,230 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+body{
+    background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url(../images/dorm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+#logo{
+    color: white;
+    cursor: grab;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+    transition: font-size 0.6s, text-shadow 0.6s;
+}
+#logo:hover{
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.8);
+    font-size: 45px;
+}
+#elements{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+.logout-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 20px;
+    z-index: 10;
+}
+.logout-container button{
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+.logout-container button:hover {
+    text-decoration: underline;
+}
+.text:hover .logout-container{
+    display: block;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 18.5px;
+    text-shadow: 5px 5px 10px rgba(255,255,255,0.45);
+    transition: background-color 0.4s, font-size 0.4s;
+    position: relative;
+}
+.text:hover{
+    font-size: 28px;
+    background-color: rgba(38, 136, 206, 0.5);
+}
+.my-icon{
+    font-size: 23px;
+    margin-right: 15px;
+}
+section{
+    height: 400px;
+    width: 800px;
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(7px);  
+    border-radius: 40px;
+}
+.sec1, .sec2{
+    width: 800px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.839);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+    transition: background-color 1s ease;
+    cursor: pointer; 
+    color: white;
+    transition: display 10s;
+}
+.sec2{
+   display: none;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 40px;
+    background: linear-gradient(to right, #015c92, rgb(1, 9, 22));
+    z-index: -4;
+    left: 0;
+    transition: left 1s ease-in-out, background 2s ease-in-out;
+
+}
+section.changed::before{
+    background: linear-gradient(to left, #015c92, rgb(1, 9, 22));
+    left: 50%;
+    
+}
+
+.xxx, .togglePanelLeft, .togglePanelRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+p{
+    text-align: center;
+    font-size: 30px;
+}
+h1{
+    font-size: 35px;
+    color: white;
+}
+.input{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+}
+.input::placeholder{
+    font-size: 20px;
+}
+
+.dark{
+    background: linear-gradient(to right, #015c92, rgb(1, 9, 22));
+    color: white;
+    scale: 1;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    cursor: pointer;
+    transition: scale 0.35s ease-in-out;
+}
+.light{
+    scale: 1;
+    color: rgb(1, 9, 22);
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: scale 0.35s ease-in-out;
+}
+.dark:hover, .light:hover{
+    scale: 1.2;
+}
+/* .msgDiv{
+    background-color: aquamarine;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

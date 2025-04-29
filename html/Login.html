@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/Login.css">
+    <script src="../js/Login.js" defer></script>
+    <script type="module" src="../js/firebaseauth.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div id="logo">
+               <p>DormDiscover</p>
+            </div>
+            <div id="elements">
+                <div><a href="./WelcomePage.html" class="text">Home</a></div>
+                <div><a href="./AboutUs.html" class="text">About Us</a></div>
+                <div><a href="./Login.html" class="text">Login</a></div>
+            </div>
+        </header>
+        
+        <section class="section">
+            
+            <div class="sec1">
+                
+                <form class="togglePanelLeft">
+                    <h1>Welcome Back</h1><br><br>
+                    <p>Enter your personal <br>details to use all of the site features</p><br><br>
+                    <input type="submit" value="Sign In" id="signInBut" class="light">
+                </form>
+                <div id="form_signUp" class="xxx">
+                    <form class="form_signUp">
+                        <h1>Create Account</h1><br>
+                        <input type="text" class="input" id="nameU" placeholder="Name" required><br>
+                        <input type="email" class="input" id="emailU" placeholder="Email" required><br>
+                        <input type="password" class="input" id="passwordU" placeholder="Password" required><br><br>
+                        <input type="submit" class="dark" id="submitSignUp" value="Sign Up">  
+                    </form>
+                </div>
+            </div>
+    
+            <div class="sec2">
+
+                <div id="form_signIn" class="xxx"> 
+                    <form class="form_signIn">
+                        <h1>Sign In</h1><br>
+                        <input type="email" class="input" id="emailI" placeholder="Email" required><br>
+                        <input type="password" class="input" id="passwordI" placeholder="Password" required><br><br>
+                        <a href="#" style="color: white; text-decoration: none;">Forgot Password?</a><br>
+                        <input type="submit" class="dark" id="submitSignIn" value="Sign In">
+                    </form>
+                </div>
+                <form class="togglePanelRight">
+                    <h1>Hello, Friend!</h1><br><br>
+                    <p>Register with your personal details to use all of the site features</p><br><br>
+                    <input type="submit" value="Sign Up" id="signUpBut" class="light">
+                </form>
+                </div>
+        </section>
+    </main>
+    
+
+
+</body>
+</html>
